@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+  <remote  name="viper"
+           fetch="https://github.com/TeamViper/"
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-4.2.2_r1"
            remote="aosp"
            sync-j="4" />
-
+           
+  <project path="manifest" name="platform_manifest" remote="viper" revision="jb4.2" />
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -275,7 +277,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="viper" revision="jb4.2" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
