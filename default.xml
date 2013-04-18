@@ -3,6 +3,7 @@
 
   <remote  name="viper"
            fetch="https://github.com/TeamViper/"
+           revision="jb4.2" />
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
