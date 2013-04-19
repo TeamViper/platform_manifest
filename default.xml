@@ -14,7 +14,7 @@
            remote="aosp"
            sync-j="4" />
 		   
-  <project path="manifest" name="platform_manifest" remote="viper" revision="jb4.2" >        
+  <project path="manifest" name="platform_manifest" remote="viper" revision="jb4.2" />        
   <project path="build" name="platform_build" remote="viper" revision="jb4.2" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
